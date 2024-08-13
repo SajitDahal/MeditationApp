@@ -8,6 +8,7 @@ import { TimerContext } from "@/Context/TimerContext";
 
 const AdjustDuration = () => {
   const { setDuration } = useContext(TimerContext);
+
   const handlePress = (duration: number) => {
     setDuration(duration);
     router.back();
